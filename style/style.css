@@ -1,0 +1,335 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos */
+
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    background: url(../img/pxfuel.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+h1,
+h2 {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+p{
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.7em;
+}
+
+/*Card */
+
+.profile-card{
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+
+
+}
+
+.card-header{
+    background-color: #2c3a47;
+    padding: 3em;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0,37);
+}
+
+.pic{
+    display: inline-block;
+    padding: 8px;
+    background: linear-gradient(130deg, #B3005E, #060047);
+    margin: auto;
+    border-radius: 100%;
+    animation: animated-gradient 2s linear infinite;
+}
+
+.pic img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+@keyframes animated-gradient {
+    25%{
+        background-position: left bottom;
+    }
+    50%{
+        background-position: right bottom;
+    }
+    75%{
+        background-position: right top;
+    }
+
+    100%{
+        background-position: left top;
+    }
+    
+}
+
+.name{
+    color: #FFEA20;
+    font-size: 28px;
+    font-weight: 600;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.desc{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    color: #8DCBE6;
+}
+
+
+/* Skills section */
+.titled{
+    text-align: center;
+    font-size: 36px; /* Tamaño del texto */
+    color: #000000; /* Color del texto */
+    text-decoration: underline; /* Subrayado del texto */
+    text-decoration-color: crimson; /* Color del subrayado */
+    text-decoration-thickness: 3px; /* Grosor del subrayado */
+}
+
+.skills-header{
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+    position: relative;
+    }
+
+.skills-section{
+    padding-top: 20px;
+    }
+    
+    .skills-header{
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+    position: relative;
+    }
+    
+    .skills-header:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    border-radius: 2px;
+    }
+    
+    .skills-container{
+    display: grid;
+    grid-tempLate-columns: repeat(5, 1fr);
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    grid-gap:1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+    }
+    .skills-box{
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.30);
+    box-shadow: 0 8 32px 0 rgba(31,38,135,0.37 );
+    backdrop-filter: blur(2px);
+    border: 20px solid rgba(red, green, blue, 0.18);
+    }
+    .skills-box:hover > .skills-title::after, 
+    .skills-box:hover > .skills-title::before{
+    width: 30px;
+    }
+    .skills-box:hover .skills-img{
+    transform: translateX(-20px);
+    }
+    
+    .skills-title{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    }
+    
+    .skills-title:after{
+    content: '';
+    position:absolute;
+    bottom: 0;
+    right: 50%;
+    width:20px;
+    height:4px;
+    border-radius: 2px 0 0 2px;
+    background-color: crimson;
+    transition: .5s;
+    }
+    
+    .skills-title:before{
+    content: '';
+    position:absolute;
+    bottom: 0;
+    left: 50%;
+    width:100px;
+    height:4px;
+    border-radius: 0 2px 2px 0;
+    background-color: crimson;
+    }
+    
+    .skills-icons{
+    width:50px;
+    z-index:2;
+    }
+    
+    .skills-img{
+    width:90px;
+    height:90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: #fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition: .5s;
+    }
+    
+    .skills-img:after{
+    content: '';
+    position:absolute;
+    top:0;
+    left: 0;
+    width:50%;
+    height:90px;
+    background: rgba(100, 100, 100, 0.5);
+    border-radius: 45px 0 0 45px;
+    }
+    .skills-title h3{
+    color: #000000;
+    margin-top: 0.5rem;
+    }
+    
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.small{
+    font-size: 12px;
+}
+
+/* Navbar*/
+
+#navbar {
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#navbar a {
+    color: #000;
+}
+
+#navbar .logo{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/*.current {
+    text-decoration: underline;
+}
+*/
+
+a{
+    text-decoration: none;
+}
+
+/* Slider */
+
+.sliders{
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.30);
+    box-shadow: 0 8 32px 0 rgba(31,38,135,0.37 );
+    backdrop-filter: blur(2px);
+    border: 20px solid rgba(red, green, blue, 0.18);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.slider{
+    position: relative;
+    width: 200px;
+    height: 250px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+}
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.slider span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+}
+
+.slider span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    object-fit: cover;
+    transition: 2s;
+}
+
+.slider span:hover img{
+    transform: translateY(-50px);
+}
